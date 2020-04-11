@@ -1,6 +1,6 @@
-baseURL = "https://demo.creativebulma.net/components/badge/1.0/"
+baseURL = "https://demo.creativebulma.net/components/divider/1.0/"
 languageCode = "en-us"
-title = "BulmaBadge"
+title = "BulmaDivider"
 theme = "creativebulma"
 [markup]
   [markup.highlight]

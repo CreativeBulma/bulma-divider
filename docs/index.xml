@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on BulmaDivider</title>
+    <link>https://demo.creativebulma.net/components/divider/1.0/</link>
+    <description>Recent content in Introduction on BulmaDivider</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://demo.creativebulma.net/components/divider/1.0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(2020-04-11)</title>
+      <link>https://demo.creativebulma.net/components/divider/1.0/release/1/</link>
+      <pubDate>Sat, 11 Apr 2020 10:46:47 +0200</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/divider/1.0/release/1/</guid>
+      <description>First working version
+  added Orientation : horitzontal and vertical  added Possibility to display text on divider  </description>
+    </item>
+    
+    <item>
+      <title>Customize</title>
+      <link>https://demo.creativebulma.net/components/divider/1.0/how-to/customize/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/divider/1.0/how-to/customize/</guid>
+      <description>How-To Customize This component has been designed to be easily customizable.
+There is 2 ways to customize it, depending on the way you integrate this component into your project.
+Sass If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
+$divider-background-color: $dark @import &amp;#39;@creativebulma/bulma-divider&amp;#39; Variables   Variable name Description Default value     $divider-background-color  $grey-light   $divider-font-size  $size-7   $divider-margin-inner-size  10px   $divider-margin-size  25px    CSS If you uses the CSS version you have to customize Sass source files then rebuild the CSS file.</description>
+    </item>
+    
+    <item>
+      <title>Get Started</title>
+      <link>https://demo.creativebulma.net/components/divider/1.0/get-started/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/divider/1.0/get-started/</guid>
+      <description>Get started You only need 1 CSS file to use BulmaDivider
+Installation First, let&amp;rsquo;s install the component! There are several ways to get started with BulmaDivider.
+ 1. NPM  2. CDN  3. Github    Use npm to install the bulma-divider package recommended
+npm install @creativebulma/bulma-divider   Use the jsDelivr CDN to link to the BulmaDivider stylesheet
+https://www.jsdelivr.com/package/npm/@creativebulma/bulma-divider   Use the GitHub repository to get the latest development version.</description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
+      <link>https://demo.creativebulma.net/components/divider/1.0/changelog/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/divider/1.0/changelog/</guid>
+      <description>Changelog  v1.0.0 (2020-04-11)    First working version
+  added Orientation : horitzontal and vertical  added Possibility to display text on divider     </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -18,9 +18,9 @@ There is 2 ways to customize it, depending on the way you integrate this compone
 ## Sass
 If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
 ```sass
-$badge-height: 16px
+$divider-background-color: $dark
 
-@import '@creativebulma/bulma-badge'
+@import '@creativebulma/bulma-divider'
 ```
 
 ### Variables

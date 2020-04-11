@@ -1,22 +1,22 @@
 [
     {
-        "name": "$font-size",
+        "name": "$divider-background-color",
         "description": "",
-        "value": ".65rem"
+        "value": "$grey-light"
     },
     {
-        "name": "$badge-height",
+        "name": "$divider-font-size",
         "description": "",
-        "value": "14px"
+        "value": "$size-7"
     },
     {
-        "name": "$badge-padding",
+        "name": "$divider-margin-inner-size",
         "description": "",
-        "value": ".05rem .15rem"
+        "value": "10px"
     },
     {
-        "name": "$badge-shadow",
+        "name": "$divider-margin-size",
         "description": "",
-        "value": "0 0 0 2px $scheme-main"
+        "value": "25px"
     }
 ]

@@ -1,0 +1,74 @@
+/*! @creativebulma/bulma-divider v1.0.0 | (c) 2020 Gaetan | MIT License | https://github.com/CreativeBulma/bulma-divider */
+@-webkit-keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* line 17, src/sass/app.sass */
+.divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 25px 0;
+}
+
+/* line 28, src/sass/app.sass */
+.divider::after, .divider::before {
+  content: '';
+  display: block;
+  flex: 1;
+  height: 1px;
+  background-color: #b5b5b5;
+}
+
+/* line 36, src/sass/app.sass */
+.divider::after {
+  margin-left: 10px;
+}
+
+/* line 39, src/sass/app.sass */
+.divider::before {
+  margin-right: 10px;
+}
+
+/* line 42, src/sass/app.sass */
+.divider.is-vertical {
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+/* line 46, src/sass/app.sass */
+.divider.is-vertical::after, .divider.is-vertical::before {
+  height: auto;
+  width: 1px;
+}
+
+/* line 51, src/sass/app.sass */
+.divider.is-vertical::after {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+/* line 55, src/sass/app.sass */
+.divider.is-vertical::before {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
