@@ -1,121 +1,111 @@
-@import 'variables'
-@import 'position'
-@import 'animation'
+$badge-font-size: .65rem !default
+$badge-height: 14px !default
+$badge-padding: .05rem .15rem !default
+$badge-shadow: 0 0 0 2px $scheme-main !default
 
-=tooltip-arrow
-	&::after
-		box-sizing: border-box
-		color: $tooltip-color
-		display: inline-block
-		font-family: $tooltip-font-family
-		font-size: $tooltip-font-size
-		hyphens: auto
-		opacity: 0
-		overflow: hidden
-		pointer-events: none
-		position: absolute
-		visibility: hidden
-		z-index: $tooltip-z-index
-		content: ''
-		border-style: solid
-		border-width: $tooltip-arrow-size
-		border-color: rgba($tooltip-background-color, $tooltip-background-opacity) transparent transparent transparent
-		margin-bottom: $tooltip-arrow-size * -1 + 1
-	+tooltip-arrow-top
+=badge-positions
+    &.is-left
+        bottom: 0
+        left: 0
+        right: auto
+        top: 50%
+        transform: translate(-50%, -50%)
+    
+    &.is-right
+        bottom: auto
+        left: auto
+        right: 0
+        top: 50%
+        transform: translate(50%, -50%)
 
-=tooltip-box
-	&::before
-		box-sizing: border-box
-		color: $tooltip-color
-		display: inline-block
-		font-family: $tooltip-font-family
-		font-size: $tooltip-font-size
-		hyphens: auto
-		opacity: 0
-		overflow: hidden
-		pointer-events: none
-		position: absolute
-		visibility: hidden
-		z-index: $tooltip-z-index
-		background: rgba($tooltip-background-color, $tooltip-background-opacity)
-		border-radius: $tooltip-radius
-		content: attr(data-tooltip)
-		padding: $tooltip-padding
-		text-overflow: ellipsis
-		white-space: pre
-	+tooltip-box-top
+    &.is-top
+        bottom: auto
+        left: 50%
+        right: auto
+        top: 0
+        transform: translate(-50%, -50%)
 
-=tooltip-multiline
-	&::before
-		height: auto
-		width: $tooltip-max-width
-		max-width: $tooltip-max-width
-		text-overflow: clip
-		white-space: normal
-		word-break: keep-all
+    &.is-top-left
+        bottom: auto
+        left: 0
+        right: auto
+        top: 0
+        transform: translate(-50%, -50%)
 
-[data-tooltip]
-	&:not(.is-loading),
-	&:not(.is-disabled),
-	&:not([disabled])
-		cursor: pointer
-		overflow: visible
-		position: relative
+    &.is-top-right
+        bottom: auto
+        left: auto
+        right: 0
+        top: 0
+        transform: translate(50%, -50%)
 
-		+tooltip-box
-		&.has-tooltip-arrow
-			+tooltip-arrow
+    &.is-bottom
+        bottom: 0
+        left: 50%
+        right: auto
+        top: auto
+        transform: translate(-50%, 50%)
 
-		&.has-tooltip-bottom
-			+tooltip-direction('bottom')
+    &.is-bottom-left
+        bottom: 0
+        left: 0
+        right: auto
+        top: auto
+        transform: translate(-50%, 50%)
 
-		&.has-tooltip-left
-			+tooltip-direction('left')
+    &.is-bottom-right
+        bottom: 0
+        left: auto
+        right: 0
+        top: auto
+        transform: translate(50%, 50%)
 
-		&.has-tooltip-right
-			+tooltip-direction('right')
+.badge    
+    background-color: $primary
+    border: 2px solid transparent
+    border-radius: $badge-height
+    box-shadow: $badge-shadow
+    color: $scheme-main
+    font-size: $badge-font-size
+    height: $badge-height
+    line-height: calc(#{$badge-height / 2} + 1px)
+    min-width: $badge-height
+    overflow: hidden
+    padding: $badge-padding
+    position: absolute
+    right: 0
+    text-overflow: ellipsis
+    top: 0
+    transform: translate(50%, -50%)
+    white-space: nowrap
 
-		&.has-tooltip-multiline
-			+tooltip-multiline
+    &.is-outlined
+        background-color: $white
+        border-color: $primary
+        color: $primary
 
-		@each $name, $pair in $colors
-			$color: nth($pair, 1)
-			$color-invert: nth($pair, 2)
-			&.has-tooltip-#{$name}
-				&::after
-					border-color: rgba($color, $tooltip-background-opacity) transparent transparent transparent !important
-				&.has-tooltip-bottom
-					&::after
-						border-color: transparent transparent rgba($color, $tooltip-background-opacity) transparent !important
-				&.has-tooltip-left
-					&::after
-						border-color: transparent transparent transparent rgba($color, $tooltip-background-opacity) !important
-				&.has-tooltip-right
-					&::after
-						border-color: transparent rgba($color, $tooltip-background-opacity) transparent transparent !important
-				&:before
-					background-color: rgba($color, $tooltip-background-opacity)
-					color: $color-invert
+    +badge-positions
 
-		+tooltip-hover
-			opacity: 1
-			visibility: visible
+    @each $name, $pair in $colors
+        $color: nth($pair, 1)
+        $color-invert: nth($pair, 2)
+        
+        &.is-#{$name}
+            &:not(.is-outlined)
+                background-color: $color
+                color: $color-invert
 
-		&.has-tooltip-fade
-			+tooltip-fade
+            &.is-outlined
+                border-color: $color
+                color: $color
 
-	@import 'responsiveness'
-	
-span
-	&[data-tooltip]
-		border-bottom: 1px dashed $grey-lighter
-		@each $name, $pair in $colors
-			$color: nth($pair, 1)
-			$color-invert: nth($pair, 2)
-			&.has-tooltip-#{$name}
-				border-bottom-color: lighten($color, 5%)
-
-.control
-	span
-		&[data-tooltip]
-			border-bottom: none
+            // If light and dark colors are provided
+            @if length($pair) >= 4
+                $color-light: nth($pair, 3)
+                $color-dark: nth($pair, 4)
+                &.is-light
+                    color: $color-dark
+                    &:not(.is-outlined)
+                        background-color: $color-light
+                    &.is-outlined
+                        border-color: $color

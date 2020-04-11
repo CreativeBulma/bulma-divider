@@ -18,9 +18,9 @@ There is 2 ways to customize it, depending on the way you integrate this compone
 ## Sass
 If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
 ```sass
-$tooltip-radius: 6px
+$badge-height: 16px
 
-@import '@creativebulma/bulma-tooltip'
+@import '@creativebulma/bulma-badge'
 ```
 
 ### Variables
@@ -37,7 +37,7 @@ npm install
 This command will install all development required package.
 
 ### Customize
-Customize Sass variables defined wihtin `src/sass/_variables.sass` file. 
+Customize Sass variables defined within `src/sass/index.sass` file. 
 
 ### Build
 You can build CSS files by launching the build process with the command:

@@ -1,26 +1,26 @@
 {
-	"name": "@creativebulma/bulma-tooltip",
-	"description": "Display a tooltip attached to any kind of element, in different position.",
-	"version": "1.0.2",
-	"homepage": "https://github.com/CreativeBulma/bulma-tooltip",
+	"name": "@creativebulma/bulma-badge",
+	"description": "Display a badge attached to any kind of element, in different position.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/CreativeBulma/bulma-badge",
 	"author": {
 		"name": "Gaetan",
 		"email": "support@creativebulma.net",
 		"url": "https://creativebulma.net"
 	},
 	"main": "./src/sass/index.sass",
-	"style": "./dist/bulma-tooltip.css",
+	"style": "./dist/bulma-badge.css",
 	"sass": "./src/sass/index.sass",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/CreativeBulma/bulma-tooltip.git"
+		"url": "git+https://github.com/CreativeBulma/bulma-badge.git"
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/CreativeBulma/bulma-tooltip/issues"
+		"url": "https://github.com/CreativeBulma/bulma-badge/issues"
 	},
 	"keywords": [
-		"tooltip",
+		"badge",
 		"ui",
 		"component",
 		"extension",

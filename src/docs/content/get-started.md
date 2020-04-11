@@ -7,70 +7,271 @@ draft: false
 ---
 
 # Get started
-Although {{% link text="Bulma" href="https://bulma.io" target="_blank" %}} is a pure CSS Framework, modern Website and application use JavaScript to provide a friendlier experience. BulmaBoilerplate has been designed with that in mind and provides a clean structured project with modularity.
-
-**You only need 1 CSS file to use BulmaTooltip**
+**You only need 1 CSS file to use BulmaBadge**
 
 ## Installation
 ### First, let's install the component!
-There are several ways to get started with BulmaTooltip.
+There are several ways to get started with BulmaBadge.
 
 {{< tabs tabTotal="3" tabID="1" tabName1="1. NPM" tabName2="2. CDN" tabName3="3. Github" >}}
 {{< tab tabNum="1" >}}
-Use npm to install the `bulma-tooltip` package **recommended**
+Use npm to install the `bulma-badge` package **recommended**
 ```shell
-npm install @creativebulma/bulma-tooltip
+npm install @creativebulma/bulma-badge
 ```
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-Use the [jsDelivr](https://jsdelivr.com) CDN to link to the BulmaTooltip stylesheet
+Use the [jsDelivr](https://jsdelivr.com) CDN to link to the BulmaBadge stylesheet
 ```html
-https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tooltip
+https://www.jsdelivr.com/package/npm/@creativebulma/bulma-badge
 ```
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 Use the GitHub repository to get the latest development version.
 
-Download from the repository [https://github.com/CreativeBulma/bulma-tooltip/tree/master/dist/](https://github.com/CreativeBulma/bulma-tooltip/tree/master/dist/)
+Download from the repository [https://github.com/CreativeBulma/bulma-badge/tree/master/dist/](https://github.com/CreativeBulma/bulma-badge/tree/master/dist/)
 {{< /tab >}}
 {{< /tabs >}}
 
 ## Usage
-Tooltips are displayed into a small grey box on top of the element. All you have to do is to add `tooltip` dataset with the text you want to display as value.
+Badges are displayed into a container on top of the element. All you have to do is to add a container with the `badge` class and with the text you want to display as value.
 
 ### Styles
 #### Default
 {{< preview id="default" lang="html" >}}
-<p>Lorem ipsum dolor sit amet, <span data-tooltip="Tooltip content">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+<button class="button">
+    <span title="Badge top right" class="badge">8</span>
+    Button
+</button>
 {{< /preview >}}
 
-Tooltip can be used on any type of HTML element supporting dataset.
-{{< preview id="button" lang="html" >}}
-<button class="button" data-tooltip="Tooltip Text">top tooltip</button>
+The badge is available in outlined style. Simply append the modifier `is-outlined` to the badge element to apply the outlined version of the badge.
+{{< preview id="outlined" lang="html" >}}
+<button class="button">
+    <span title="Badge top right" class="badge is-outlined">8</span>
+    Button
+</button>
 {{< /preview >}}
 
-#### With Arrow
-For design purpose, you can display an arrow on the tooltip box by adding `has-tooltip-arrow` class on the element.
-{{< preview id="arrow" lang="html" >}}
-<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow" data-tooltip="Tooltip content">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+#### Colors
+
+{{< preview id="colors" lang="html" >}}
+<div class="columns is-multiline">
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-success">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-warning">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-danger">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-info">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-dark">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-success is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-warning is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-danger is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-info is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-success">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-warning">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-danger">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-info">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-dark">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-success is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-warning is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-danger is-light">8</span>
+            Button
+        </button>
+    </div>
+    <div class="column">
+        <button class="button">
+            <span title="Badge top right" class="badge is-outlined is-info is-light">8</span>
+            Button
+        </button>
+    </div>
+</div>
 {{< /preview >}}
 
 ### Position
+The badge is available in different positions (by default the badge is displayed top right from the container).
+
+To change the badge position, use the `is-top-left`, `is-top`, `is-top-right`, `is-right`, `is-bottom-right`, `is-bottom`, `is-bottom-left` or `is-left` modifier on the `.badge` container:
 Tooltip position can be changed by adding one of the following classes to the HTML element containing the tooltip: `has-tooltip-right`, `has-tooltip-bottom`, `has-tooltip-left`.
 {{< preview id="position" lang="html" >}}
-<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow" data-tooltip="Tooltip content on top">consectetur adipisicing elit</span>. Ipsa fugit <span class="has-tooltip-arrow has-tooltip-right" data-tooltip="Right tooltip content">dolores</span> earum quod distinctio ducimus non dignissimos <span class="has-tooltip-arrow has-tooltip-bottom" data-tooltip="Bottom tooltip content">molestias</span> amet corrupti voluptatum assumenda impedit beatae <span class="has-tooltip-arrow has-tooltip-left" data-tooltip="Left tooltip content">veritatis</span> nemo veniam error, hic cumque.</p>
-{{< /preview >}}
+<div class="columns is-multiline">
+    <div class="column">
+        <div class="columns is-multiline">
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge is-top-left">8</span>
+                    Button
+                </button>
+            </div>
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge is-top">8</span>
+                    Button
+                </button>
+            </div>
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge">8</span>
+                    Button
+                </button>
+            </div>
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge is-right">8</span>
+                    Button
+                </button>
+            </div>
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge is-bottom-right">8</span>
+                    Button
+                </button>
+            </div>
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge is-bottom">8</span>
+                    Button
+                </button>
+            </div>
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge is-bottom-left">8</span>
+                    Button
+                </button>
+            </div>
+            <div class="column">
+                <button class="button">
+                    <span title="Badge top right" class="badge is-left">8</span>
+                    Button
+                </button>
+            </div>
+        </div>
+    </div>
 
-### Colors
-Tooltip supports colors modifier by adding one of the following classes to the HTML element containing the tooltip: `has-tooltip-info`, `has-tooltip-warning`, `has-tooltip-primary`, `has-tooltip-success`, `has-tooltip-danger`.
-{{< preview id="colors" lang="html" >}}
-<p>Lorem ipsum <span class="has-tooltip-arrow has-tooltip-info" data-tooltip="Info tooltip content">dolor</span> sit amet, <span class="has-tooltip-arrow has-tooltip-warning" data-tooltip="Warning tooltip content">consectetur adipisicing elit</span>. Ipsa fugit <span class="has-tooltip-arrow has-tooltip-right has-tooltip-success" data-tooltip="Success tooltip content">dolores</span> earum quod distinctio ducimus non dignissimos <span class="has-tooltip-arrow has-tooltip-bottom has-tooltip-primary" data-tooltip="Primary tooltip content">molestias</span> amet corrupti voluptatum assumenda impedit beatae <span class="has-tooltip-arrow has-tooltip-left has-tooltip-danger" data-tooltip="Danger tooltip content">veritatis</span> nemo veniam error, hic cumque.</p>
-{{< /preview >}}
+    <div class="column is-12">
+        <section class="section">
+            <div class="has-background-light" style="height: 150px; position: relative;width: 80%; margin: auto;">
+                <span title="Badge top left" class="badge is-top-left is-danger">Badge top left</span>
+                <span title="Badge top center" class="badge is-top is-success">Badge top center</span>
+                <span title="Badge top right" class="badge is-info">Badge top right</span>
 
-### Always active
-You can set tooltip to be always visible by adding `has-tooltip-active` class on the element.
-{{< preview id="active" lang="html" >}}
-<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-active" data-tooltip="Tooltip content">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+                <span title="Badge right" class="badge is-right is-primary">Badge right</span>
+
+                <span title="Badge bottom right" class="badge is-bottom-right is-primary">Badge bottom
+                    right</span>
+                <span title="Badge bottom center" class="badge is-bottom">Badge bottom center</span>
+                <span title="Badge bottom left" class="badge is-bottom-left is-warning">Badge bottom
+                    left</span>
+
+                <span title="Badge left" class="badge is-left is-primary">Badge left</span>
+            </div>
+        </section>
+    </div>
+</div>
 {{< /preview >}}

@@ -1,6 +1,6 @@
-baseURL = "https://demo.creativebulma.net/components/tooltip/1.0/"
+baseURL = "https://demo.creativebulma.net/components/badge/1.0/"
 languageCode = "en-us"
-title = "BulmaTooltip"
+title = "BulmaBadge"
 theme = "creativebulma"
 [markup]
   [markup.highlight]

@@ -1,52 +1,22 @@
 [
     {
-        "name": "$tooltip-arrow-size",
+        "name": "$font-size",
         "description": "",
-        "value": "6px"
+        "value": ".65rem"
     },
     {
-        "name": "$tooltip-background-color",
+        "name": "$badge-height",
         "description": "",
-        "value": "$grey-dark"
+        "value": "14px"
     },
     {
-        "name": "$tooltip-background-opacity",
+        "name": "$badge-padding",
         "description": "",
-        "value": "0.9"
+        "value": ".05rem .15rem"
     },
     {
-        "name": "$tooltip-color",
+        "name": "$badge-shadow",
         "description": "",
-        "value": "$white"
-    },
-    {
-        "name": "$tooltip-font-family",
-        "description": "",
-        "value": "$family-primary"
-    },
-    {
-        "name": "$tooltip-font-size",
-        "description": "",
-        "value": "$size-7"
-    },
-    {
-        "name": "$tooltip-max-width",
-        "description": "",
-        "value": "15rem"
-    },
-    {
-        "name": "$tooltip-padding",
-        "description": "",
-        "value": ".5rem 1rem"
-    },
-    {
-        "name": "$tooltip-radius",
-        "description": "",
-        "value": "$radius-small"
-    },
-    {
-        "name": "$tooltip-z-index",
-        "description": "",
-        "value": "1020"
+        "value": "0 0 0 2px $scheme-main"
     }
 ]
