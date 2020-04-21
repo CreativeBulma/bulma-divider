@@ -1,7 +1,7 @@
 {
 	"name": "@creativebulma/bulma-divider",
 	"description": "Easily display an horizontal or vertical divider with optional text.",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"homepage": "https://github.com/CreativeBulma/bulma-divider",
 	"author": {
 		"name": "Gaetan",

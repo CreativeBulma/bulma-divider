@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on BulmaDivider</title>
-    <link>https://demo.creativebulma.net/components/divider/1.0/</link>
+    <link>https://demo.creativebulma.net/components/divider/1.1/</link>
     <description>Recent content in Introduction on BulmaDivider</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://demo.creativebulma.net/components/divider/1.0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://demo.creativebulma.net/components/divider/1.1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>(2020-04-11)</title>
-      <link>https://demo.creativebulma.net/components/divider/1.0/release/1/</link>
+      <link>https://demo.creativebulma.net/components/divider/1.1/release/1/</link>
       <pubDate>Sat, 11 Apr 2020 10:46:47 +0200</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/divider/1.0/release/1/</guid>
+      <guid>https://demo.creativebulma.net/components/divider/1.1/release/1/</guid>
       <description>First working version
   added Orientation : horitzontal and vertical  added Possibility to display text on divider  </description>
     </item>
     
     <item>
       <title>Customize</title>
-      <link>https://demo.creativebulma.net/components/divider/1.0/how-to/customize/</link>
+      <link>https://demo.creativebulma.net/components/divider/1.1/how-to/customize/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/divider/1.0/how-to/customize/</guid>
+      <guid>https://demo.creativebulma.net/components/divider/1.1/how-to/customize/</guid>
       <description>How-To Customize This component has been designed to be easily customizable.
 There is 2 ways to customize it, depending on the way you integrate this component into your project.
 Sass If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
@@ -35,10 +35,10 @@ $divider-background-color: $dark @import &amp;#39;@creativebulma/bulma-divider&a
     
     <item>
       <title>Get Started</title>
-      <link>https://demo.creativebulma.net/components/divider/1.0/get-started/</link>
+      <link>https://demo.creativebulma.net/components/divider/1.1/get-started/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/divider/1.0/get-started/</guid>
+      <guid>https://demo.creativebulma.net/components/divider/1.1/get-started/</guid>
       <description>Get started You only need 1 CSS file to use BulmaDivider
 Installation First, let&amp;rsquo;s install the component! There are several ways to get started with BulmaDivider.
  1. NPM  2. CDN  3. Github    Use npm to install the bulma-divider package recommended
@@ -48,12 +48,23 @@ https://www.jsdelivr.com/package/npm/@creativebulma/bulma-divider   Use the GitH
     
     <item>
       <title>Changelog</title>
-      <link>https://demo.creativebulma.net/components/divider/1.0/changelog/</link>
+      <link>https://demo.creativebulma.net/components/divider/1.1/changelog/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/divider/1.0/changelog/</guid>
-      <description>Changelog  v1.0.0 (2020-04-11)    First working version
+      <guid>https://demo.creativebulma.net/components/divider/1.1/changelog/</guid>
+      <description>Changelog  v1.1.0 (2020-04-11)    New styles
+  added Colors : colors modifier are not supported  added Left and Right alignments      v1.0.0 (2020-04-11)    First working version
   added Orientation : horitzontal and vertical  added Possibility to display text on divider     </description>
+    </item>
+    
+    <item>
+      <title>(2020-04-11)</title>
+      <link>https://demo.creativebulma.net/components/divider/1.1/release/2/</link>
+      <pubDate>Tue, 21 Apr 2020 10:46:47 +0200</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/divider/1.1/release/2/</guid>
+      <description>New styles
+  added Colors : colors modifier are not supported  added Left and Right alignments  </description>
     </item>
     
   </channel>
