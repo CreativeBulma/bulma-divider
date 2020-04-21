@@ -2,7 +2,7 @@
     {
         "name": "$divider-background-color",
         "description": "",
-        "value": "$grey-light"
+        "value": "$border"
     },
     {
         "name": "$divider-font-size",

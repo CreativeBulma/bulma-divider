@@ -20,7 +20,7 @@
       <description>How-To Customize This component has been designed to be easily customizable.
 There is 2 ways to customize it, depending on the way you integrate this component into your project.
 Sass If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
-$divider-background-color: $dark @import &amp;#39;@creativebulma/bulma-divider&amp;#39; Variables   Variable name Description Default value     $divider-background-color  $grey-light   $divider-font-size  $size-7   $divider-margin-inner-size  10px   $divider-margin-size  25px    CSS If you uses the CSS version you have to customize Sass source files then rebuild the CSS file.</description>
+$divider-background-color: $dark @import &amp;#39;@creativebulma/bulma-divider&amp;#39; Variables   Variable name Description Default value     $divider-background-color  $border   $divider-font-size  $size-7   $divider-margin-inner-size  10px   $divider-margin-size  25px    CSS If you uses the CSS version you have to customize Sass source files then rebuild the CSS file.</description>
     </item>
     
   </channel>
