@@ -36,14 +36,14 @@ $divider-background-color: $dark @import &amp;#39;@creativebulma/bulma-divider&a
     <item>
       <title>Get Started</title>
       <link>https://demo.creativebulma.net/components/divider/1.1/get-started/</link>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://demo.creativebulma.net/components/divider/1.1/get-started/</guid>
       <description>Get started You only need 1 CSS file to use BulmaDivider
 Installation First, let&amp;rsquo;s install the component! There are several ways to get started with BulmaDivider.
  1. NPM  2. CDN  3. Github    Use npm to install the bulma-divider package recommended
-npm install @creativebulma/bulma-divider   Use the jsDelivr CDN to link to the BulmaDivider stylesheet
-https://www.jsdelivr.com/package/npm/@creativebulma/bulma-divider   Use the GitHub repository to get the latest development version.</description>
+npm install @creativebulma/bulma-divider Then import the css in your project, for example like this:
+@import &amp;quot;~@creativebulma/bulma-divider&amp;quot;;   Use the jsDelivr CDN to link to the BulmaDivider stylesheet</description>
     </item>
     
     <item>
