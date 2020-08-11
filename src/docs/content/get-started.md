@@ -1,6 +1,6 @@
 ---
 title: "Get Started"
-date: "2020-03-21"
+date: "2020-05-18"
 menu: "main"
 weight: 2
 draft: false
@@ -18,6 +18,10 @@ There are several ways to get started with BulmaDivider.
 Use npm to install the `bulma-divider` package **recommended**
 ```shell
 npm install @creativebulma/bulma-divider
+```
+Then import the css in your project, for example like this:
+```
+@import "~@creativebulma/bulma-divider";
 ```
 {{< /tab >}}
 
