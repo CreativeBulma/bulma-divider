@@ -14,15 +14,13 @@ This component extends [Bulma CSS Framework](https://bulma.io) and requires it t
 ```shell
 npm i -D @creativebulma/bulma-divider
 ```
-Full installation steps can be found here: [installation steps](https://demo.creativebulma.net/components/divider/1.1/get-started)
+Full installation steps can be found here: [installation steps](https://bulma-divider.netlify.app/get-started)
 
 ## Documentation & Demo
-Full documentation and demo are available [here](https://demo.creativebulma.net/components/divider/1.1/get-started)
+Full documentation and demo are available [here](https://bulma-divider.netlify.app/get-started)
 
 ## About the project
-BulmaDivider is © 2020 by [CreativeBulma](https://creativebulma.net).
-
-**If you enjoy this component, have a look at our [MarketPlace](https://creativebulma.net) and discover Free and Premium Bulma components and Templates.**
+BulmaDivider is © 2020 by [CreativeBulma](https://github.com/CreativeBulma).
 
 ## License
 BulmaDivider is distributed under [MIT](https://github.com/CreativeBulma/bulma-divider/blob/master/LICENSE) license.
