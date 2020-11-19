@@ -1,4 +1,4 @@
-baseURL = "https://demo.creativebulma.net/components/divider/1.1/"
+baseURL = "https://bulma-divider.netlify.app/"
 languageCode = "en-us"
 title = "BulmaDivider"
 theme = "creativebulma"
