@@ -11,8 +11,6 @@ draft: false
 
 BulmaDivider is a pure CSS {{% link text="Bulma" href="https://bulma.io" target="_blank" %}} extension which brings the ability to **easily display an horizontal or vertical divider with optional text**.
 
-{{% notification primary %}}If you enjoy this component, have a look at our [MarketPlace](https://creativebulma.net) and discover Free and Premium Bulma components and Templates.{{% /notification %}}
-
 ## License
 BulmaDivider is © 2020 by [CreativeBulma](https://creativebulma.net).
 
