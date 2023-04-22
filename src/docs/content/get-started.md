@@ -46,7 +46,7 @@ All you have to do is to add a container with the `divider` class and with the t
 #### Horizontal (default)
 {{< preview id="default" lang="html" >}}
 <div>
-    <div class="divider">Exemple</div>
+    <div class="divider">Example</div>
 </div>
 {{< /preview >}}
 
