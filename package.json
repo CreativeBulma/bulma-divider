@@ -3,11 +3,6 @@
 	"description": "Easily display an horizontal or vertical divider with optional text.",
 	"version": "1.1.0",
 	"homepage": "https://github.com/CreativeBulma/bulma-divider",
-	"author": {
-		"name": "Gaetan",
-		"email": "support@creativebulma.net",
-		"url": "https://creativebulma.net"
-	},
 	"main": "./src/sass/index.sass",
 	"style": "./dist/bulma-divider.css",
 	"sass": "./src/sass/index.sass",
