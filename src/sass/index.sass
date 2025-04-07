@@ -24,6 +24,11 @@ $divider-margin-size: 25px !default
         height: 1px
         background-color: $divider-background-color
 
+    @for $i from 0 through 7
+        &-#{$i}::after,
+        &-#{$i}::before
+            height: #{$i}px
+
     &:not(.is-right)
         &::after
             margin-left: $divider-margin-inner-size
@@ -34,11 +39,11 @@ $divider-margin-size: 25px !default
 
     &.is-left
         &::before
-           display: none 
-    
+           display: none
+
     &.is-right
         &::after
-           display: none 
+           display: none
 
     &.is-vertical
         flex-direction: column
@@ -56,6 +61,11 @@ $divider-margin-size: 25px !default
         &::before
             margin-right: 0
             margin-bottom: $divider-margin-inner-size
+
+    @for $i from 0 through 7
+        &-#{$i}.is-vertical::after,
+        &-#{$i}.is-vertical::before
+            width: #{$i}px
 
     @each $name, $pair in $colors
         $color: nth($pair, 1)
